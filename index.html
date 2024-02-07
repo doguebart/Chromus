@@ -3,11 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/jpg" href="/assets/favicon.png" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Outfit&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
       tailwind.config = {
         theme: {
@@ -17,6 +24,7 @@
             },
             lineHeight: {
               12: "3rem",
+              normal: "1.5rem",
             },
             fontFamily: {
               outfit: ["Outfit"],
@@ -25,10 +33,17 @@
         },
       };
     </script>
+    <style>
+      .swiper-pagination-bullet-active {
+        width: 10px;
+        height: 10px;
+        background-color: #002071;
+      }
+    </style>
     <title>Chromus Pinturas</title>
   </head>
   <body class="font-outfit">
-    <header class="bg-white shadow-sm w-full">
+    <header class="bg-white shadow-sm w-full fixed top-0 z-50">
       <nav class="container mx-auto px-6 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center py-3">
           <a href="#hero" class="flex items-center">
@@ -96,7 +111,9 @@
       </nav>
     </header>
     <main>
-      <section class="px-6 py-12 w-full max-h-full">
+      <section
+        class="my-[8rem] px-6 w-full flex flex-col max-h-screen justify-center"
+      >
         <div class="w-[70%] flex flex-col space-y-5 mb-[20px]">
           <h1 class="leading-12 font-black text-black text-[40px]">
             Transforme ambientes com
@@ -108,17 +125,17 @@
           </p>
         </div>
         <div class="w-full max-h-full flex items-center gap-10 mb-[1.5rem]">
-          <div class="w-1/2 h-[200px] rounded-lg">
+          <div class="w-1/2 h-[200px] rounded-[1.5rem]">
             <img
               src="./assets/projetos/project-image-1.jpg"
-              class="w-full h-full object-cover rounded-lg"
+              class="w-full h-full object-cover rounded-[1.5rem]"
               alt=""
             />
           </div>
-          <div class="w-1/2 h-[200px] rounded-lg">
+          <div class="w-1/2 h-[200px] rounded-[1.5rem]">
             <img
               src="./assets/projetos/project-image-2.jpg"
-              class="w-full h-full object-cover rounded-lg"
+              class="w-full h-full object-cover rounded-[1.5rem]"
               alt=""
             />
           </div>
@@ -134,6 +151,86 @@
             class="w-fit text-blue shadow-sm bg-white border border-solid border-blue p-3 rounded-full hover:bg-blue hover:text-white duration-200"
             >Saber Mais</a
           >
+        </div>
+      </section>
+      <section class="w-full max-h-full px-6 flex flex-col">
+        <div class="flex flex-col space-y-2 w-[70%]">
+          <h2 class="font-bold text-blue text-[1rem] tracking-[.25em]">
+            SERVIÇOS
+          </h2>
+          <p class="font-bold text-black text-[1.5rem] leading-normal">
+            Explore nossa gama de serviços de pintura de alto padrão
+          </p>
+        </div>
+        <div class="w-full max-h-full py-[2rem]">
+          <div class="swiper">
+            <div class="swiper-wrapper mb-[4rem]">
+              <div class="swiper-slide flex justify-center">
+                <div
+                  class="flex flex-col justify-center items-center w-[60%] h-[340px] rounded-[1.5rem] bg-white shadow border border-solid border-gray-200"
+                >
+                  <div class="flex flex-col px-[1rem] space-y-2">
+                    <div
+                      class="w-[50px] h-[50px] bg-blue rounded-full flex items-center justify-center"
+                    >
+                      <img src="./assets/house-icon.svg" class="w-1/2" alt="" />
+                    </div>
+                    <p class="font-bold text-[1.5rem]">Pintura Residencial</p>
+                    <p>
+                      A pintura residencial é um processo de aplicação de tinta
+                      em superfícies internas e externas de residências. O
+                      objetivo é proteger e decorar as superfícies, além de
+                      melhorar a estética do ambiente
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide flex justify-center">
+                <div
+                  class="flex flex-col justify-center items-center w-[60%] h-[340px] rounded-[1.5rem] bg-white shadow border border-solid border-gray-200"
+                >
+                  <div class="flex flex-col px-[1rem] py-[2rem] space-y-2">
+                    <div
+                      class="w-[50px] h-[50px] bg-blue rounded-full flex items-center justify-center"
+                    >
+                      <img
+                        src="./assets/company-icon.svg"
+                        class="w-1/2"
+                        alt=""
+                      />
+                    </div>
+                    <p class="font-bold text-[1.5rem]">Pintura Comercial</p>
+                    <p>
+                      Aplicação de tinta em superfícies internas e externas de
+                      comércios e indústrias. O objetivo é proteger as
+                      superfícies, além de valorizar o negócio e melhorar a
+                      estética do ambiente
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide flex justify-center">
+                <div
+                  class="flex flex-col justify-center items-center w-[60%] h-[340px] rounded-[1.5rem] bg-white shadow border border-solid border-gray-200"
+                >
+                  <div class="flex flex-col px-[1rem] py-[2rem] space-y-2">
+                    <div
+                      class="w-[50px] h-[50px] bg-blue rounded-full flex items-center justify-center"
+                    >
+                      <img src="./assets/paint-icon.svg" class="w-1/2" alt="" />
+                    </div>
+                    <p class="font-bold text-[1.5rem]">Pintura Decorativa</p>
+                    <p>
+                      A pintura decorativa é uma ótima maneira de dar um toque
+                      especial ao seu ambiente. Ela pode ser utilizada para
+                      criar ambientes mais modernos, clássicos ou personalizados
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
         </div>
       </section>
     </main>
@@ -158,6 +255,17 @@
             toggleMenu();
           }
         });
+      });
+    </script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        autoplay: {
+          delay: 5000,
+        },
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+        },
       });
     </script>
   </body>
