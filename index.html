@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit&display=swap"
+      rel="stylesheet"
+    />
     <script>
       tailwind.config = {
         theme: {
@@ -11,14 +15,20 @@
             colors: {
               blue: "#002071",
             },
+            lineHeight: {
+              12: "3rem",
+            },
+            fontFamily: {
+              outfit: ["Outfit"],
+            },
           },
         },
       };
     </script>
     <title>Chromus Pinturas</title>
   </head>
-  <body>
-    <header class="bg-white shadow-sm fixed top-0 left-0 w-full z-50">
+  <body class="font-outfit">
+    <header class="bg-white shadow-sm w-full">
       <nav class="container mx-auto px-6 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center py-3">
           <a href="#hero" class="flex items-center">
@@ -85,6 +95,48 @@
         </div>
       </nav>
     </header>
+    <main>
+      <section class="px-6 py-12 w-full max-h-full">
+        <div class="w-[70%] flex flex-col space-y-5 mb-[20px]">
+          <h1 class="leading-12 font-black text-black text-[40px]">
+            Transforme ambientes com
+            <strong class="text-blue">elegância e sofisticação</strong>
+          </h1>
+          <p class="text-gray-500">
+            Pintura de alto padrão e texturização para deixar sua casa ou
+            empresa impecável
+          </p>
+        </div>
+        <div class="w-full max-h-full flex items-center gap-10 mb-[1.5rem]">
+          <div class="w-1/2 h-[200px] rounded-lg">
+            <img
+              src="./assets/projetos/project-image-1.jpg"
+              class="w-full h-full object-cover rounded-lg"
+              alt=""
+            />
+          </div>
+          <div class="w-1/2 h-[200px] rounded-lg">
+            <img
+              src="./assets/projetos/project-image-2.jpg"
+              class="w-full h-full object-cover rounded-lg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="flex flex-col space-y-[0.5rem]">
+          <a
+            href="#orcamento"
+            class="w-fit text-white shadow-sm bg-blue p-3 rounded-full hover:bg-blue/90 duration-200"
+            >Receber Orçamento</a
+          >
+          <a
+            href="#orcamento"
+            class="w-fit text-blue shadow-sm bg-white border border-solid border-blue p-3 rounded-full hover:bg-blue hover:text-white duration-200"
+            >Saber Mais</a
+          >
+        </div>
+      </section>
+    </main>
 
     <script>
       const menuButton = document.getElementById("menu-button");
