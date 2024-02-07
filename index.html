@@ -53,7 +53,7 @@
             class="inline-flex items-center justify-center rounded-md text-gray-700 hover:text-gray-900 focus:outline-none focus:text-gray-900 lg:hidden"
             id="menu-button"
           >
-            <img src="./assets/menu.svg" class="w-[2rem]" alt="" />
+            <img src="./assets/icons/menu.svg" class="w-[2rem]" alt="" />
           </button>
           <div class="hidden lg:flex items-center space-x-10">
             <a href="#inicio" class="text-gray-700 hover:text-blue">Início</a>
@@ -112,7 +112,8 @@
     </header>
     <main>
       <section
-        class="my-[8rem] px-6 w-full flex flex-col max-h-screen justify-center"
+        id="inicio"
+        class="py-[8rem] px-6 w-full flex flex-col max-h-screen justify-center"
       >
         <div class="w-[70%] flex flex-col space-y-5 mb-[20px]">
           <h1 class="leading-12 font-black text-black text-[40px]">
@@ -153,7 +154,10 @@
           >
         </div>
       </section>
-      <section class="w-full max-h-full px-6 flex flex-col">
+      <section
+        id="servicos"
+        class="w-full max-h-full px-6 pb-[4rem] flex flex-col"
+      >
         <div class="flex flex-col space-y-2 w-[70%]">
           <h2 class="font-bold text-blue text-[1rem] tracking-[.25em]">
             SERVIÇOS
@@ -162,7 +166,7 @@
             Explore nossa gama de serviços de pintura de alto padrão
           </p>
         </div>
-        <div class="w-full max-h-full py-[2rem]">
+        <div class="w-full max-h-full py-[4rem]">
           <div class="swiper">
             <div class="swiper-wrapper mb-[4rem]">
               <div class="swiper-slide flex justify-center">
@@ -173,7 +177,11 @@
                     <div
                       class="w-[50px] h-[50px] bg-blue rounded-full flex items-center justify-center"
                     >
-                      <img src="./assets/house-icon.svg" class="w-1/2" alt="" />
+                      <img
+                        src="./assets/icons/house-icon.svg"
+                        class="w-1/2"
+                        alt=""
+                      />
                     </div>
                     <p class="font-bold text-[1.5rem]">Pintura Residencial</p>
                     <p>
@@ -194,7 +202,7 @@
                       class="w-[50px] h-[50px] bg-blue rounded-full flex items-center justify-center"
                     >
                       <img
-                        src="./assets/company-icon.svg"
+                        src="./assets/icons/company-icon.svg"
                         class="w-1/2"
                         alt=""
                       />
@@ -217,7 +225,11 @@
                     <div
                       class="w-[50px] h-[50px] bg-blue rounded-full flex items-center justify-center"
                     >
-                      <img src="./assets/paint-icon.svg" class="w-1/2" alt="" />
+                      <img
+                        src="./assets/icons/paint-icon.svg"
+                        class="w-1/2"
+                        alt=""
+                      />
                     </div>
                     <p class="font-bold text-[1.5rem]">Pintura Decorativa</p>
                     <p>
@@ -230,6 +242,75 @@
               </div>
             </div>
             <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <section id="projetos" class="w-full max-h-full px-6 flex flex-col">
+        <div class="flex flex-col space-y-2 w-[70%]">
+          <h2 class="font-bold text-blue text-[1rem] tracking-[.25em]">
+            PROJETOS
+          </h2>
+          <p class="font-bold text-black text-[1.5rem] leading-normal">
+            Transformamos ambientes, deixando-os mais bonitos, elegantes e
+            confortáveis
+          </p>
+        </div>
+        <div class="w-full max-h-full py-[4rem]">
+          <div class="swiper">
+            <div class="swiper-wrapper mb-[4rem]">
+              <div class="swiper-slide flex justify-center">
+                <div
+                  class="flex flex-col justify-center items-center w-[80%] h-[340px] rounded-[1.5rem] bg-white shadow border border-solid border-gray-200"
+                >
+                  <img
+                    src="./assets/projetos/project-image-1.jpg"
+                    class="rounded-[1.5rem] w-full h-full object-cover"
+                    alt="Imagem do projeto"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide flex justify-center">
+                <div
+                  class="flex flex-col justify-center items-center w-[80%] h-[340px] rounded-[1.5rem] bg-white shadow border border-solid border-gray-200"
+                >
+                  <img
+                    src="./assets/projetos/project-image-2.jpg"
+                    class="rounded-[1.5rem] w-full h-full object-cover"
+                    alt="Imagem do projeto"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide flex justify-center">
+                <div
+                  class="flex flex-col justify-center items-center w-[80%] h-[340px] rounded-[1.5rem] bg-white shadow border border-solid border-gray-200"
+                >
+                  <img
+                    src="./assets/projetos/project-image-3.jpg"
+                    class="rounded-[1.5rem] w-full h-full object-cover"
+                    alt="Imagem do projeto"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide flex justify-center">
+                <div
+                  class="flex flex-col justify-center items-center w-[80%] h-[340px] rounded-[1.5rem] bg-white shadow border border-solid border-gray-200"
+                >
+                  <img
+                    src="./assets/projetos/project-image-4.jpg"
+                    class="rounded-[1.5rem] w-full h-full object-cover"
+                    alt="Imagem do projeto"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="w-full flex justify-center py-6">
+            <a
+              href="#orcamento"
+              class="w-fit text-white shadow-sm bg-blue p-3 rounded-full hover:bg-blue/90 duration-200"
+              >Ver Todos Projetos</a
+            >
           </div>
         </div>
       </section>
