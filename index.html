@@ -13,8 +13,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script>
       tailwind.config = {
         theme: {
@@ -154,7 +154,11 @@
           >
         </div>
       </section>
-      <section id="servicos" class="w-full h-fit px-6 pb-[4rem] flex flex-col">
+      <section
+        data-aos="fade-right"
+        class="w-full h-fit px-6 pb-[4rem] flex flex-col"
+        id="servicos"
+      >
         <div class="flex flex-col space-y-2 w-[70%]">
           <h2 class="font-bold text-blue text-[1rem] tracking-[.25em]">
             SERVIÇOS
@@ -242,7 +246,11 @@
           </div>
         </div>
       </section>
-      <section id="projetos" class="w-full h-fit px-6 flex flex-col">
+      <section
+        id="projetos"
+        class="w-full h-fit px-6 flex flex-col"
+        data-aos="fade-left"
+      >
         <div class="flex flex-col space-y-2 w-[70%]">
           <h2 class="font-bold text-blue text-[1rem] tracking-[.25em]">
             PROJETOS
@@ -260,6 +268,7 @@
                   class="flex flex-col justify-center items-center w-[80%] h-[340px] rounded-[1.5rem] bg-white shadow border border-solid border-gray-200"
                 >
                   <img
+                    loading="lazy"
                     src="./assets/projetos/project-image-1.jpg"
                     class="rounded-[1.5rem] w-full h-full object-cover"
                     alt="Imagem do projeto"
@@ -271,6 +280,7 @@
                   class="flex flex-col justify-center items-center w-[80%] h-[340px] rounded-[1.5rem] bg-white shadow border border-solid border-gray-200"
                 >
                   <img
+                    loading="lazy"
                     src="./assets/projetos/project-image-2.jpg"
                     class="rounded-[1.5rem] w-full h-full object-cover"
                     alt="Imagem do projeto"
@@ -282,6 +292,7 @@
                   class="flex flex-col justify-center items-center w-[80%] h-[340px] rounded-[1.5rem] bg-white shadow border border-solid border-gray-200"
                 >
                   <img
+                    loading="lazy"
                     src="./assets/projetos/project-image-3.jpg"
                     class="rounded-[1.5rem] w-full h-full object-cover"
                     alt="Imagem do projeto"
@@ -293,6 +304,7 @@
                   class="flex flex-col justify-center items-center w-[80%] h-[340px] rounded-[1.5rem] bg-white shadow border border-solid border-gray-200"
                 >
                   <img
+                    loading="lazy"
                     src="./assets/projetos/project-image-4.jpg"
                     class="rounded-[1.5rem] w-full h-full object-cover"
                     alt="Imagem do projeto"
@@ -345,6 +357,10 @@
           el: ".swiper-pagination",
         },
       });
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>
