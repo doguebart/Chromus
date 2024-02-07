@@ -34,9 +34,15 @@
       };
     </script>
     <style>
+      .swiper-pagination-bullet {
+        width: 14px;
+        height: 14px;
+        background-color: #002071;
+      }
+
       .swiper-pagination-bullet-active {
-        width: 10px;
-        height: 10px;
+        width: 16px;
+        height: 16px;
         background-color: #002071;
       }
     </style>
@@ -163,12 +169,12 @@
             Explore nossa gama de serviços de pintura de alto padrão
           </p>
         </div>
-        <div class="w-full max-h-full py-[4rem]">
+        <div class="w-full max-h-full py-[2rem]">
           <div class="swiper">
             <div class="swiper-wrapper mb-[4rem]">
               <div class="swiper-slide flex justify-center">
                 <div
-                  class="flex flex-col justify-center items-center w-[80%] h-[340px] rounded-[1.5rem] bg-white shadow border border-solid border-gray-200"
+                  class="flex flex-col justify-center items-center w-[100%] h-[340px] rounded-[1.5rem] bg-white shadow border border-solid border-gray-200"
                 >
                   <div class="flex flex-col px-[1rem] space-y-2">
                     <div
@@ -192,7 +198,7 @@
               </div>
               <div class="swiper-slide flex justify-center">
                 <div
-                  class="flex flex-col justify-center items-center w-[80%] h-[340px] rounded-[1.5rem] bg-white shadow border border-solid border-gray-200"
+                  class="flex flex-col justify-center items-center w-[100%] h-[340px] rounded-[1.5rem] bg-white shadow border border-solid border-gray-200"
                 >
                   <div class="flex flex-col px-[1rem] py-[2rem] space-y-2">
                     <div
@@ -216,7 +222,7 @@
               </div>
               <div class="swiper-slide flex justify-center">
                 <div
-                  class="flex flex-col justify-center items-center w-[80%] h-[340px] rounded-[1.5rem] bg-white shadow border border-solid border-gray-200"
+                  class="flex flex-col justify-center items-center w-[100%] h-[340px] rounded-[1.5rem] bg-white shadow border border-solid border-gray-200"
                 >
                   <div class="flex flex-col px-[1rem] py-[2rem] space-y-2">
                     <div
@@ -252,12 +258,12 @@
             confortáveis
           </p>
         </div>
-        <div class="w-full max-h-full py-[4rem]">
+        <div class="w-full max-h-full py-[2rem]">
           <div class="swiper">
             <div class="swiper-wrapper mb-[4rem]">
               <div class="swiper-slide flex justify-center">
                 <div
-                  class="flex flex-col justify-center items-center w-[80%] h-[340px] rounded-[1.5rem] bg-white shadow border border-solid border-gray-200"
+                  class="flex flex-col justify-center items-center w-[100%] h-[340px] rounded-[1.5rem] bg-white shadow border border-solid border-gray-200"
                 >
                   <img
                     loading="lazy"
@@ -265,11 +271,12 @@
                     class="rounded-[1.5rem] w-full h-full object-cover"
                     alt="Imagem do projeto"
                   />
+                  <div class="swiper-lazy-preloader"></div>
                 </div>
               </div>
               <div class="swiper-slide flex justify-center">
                 <div
-                  class="flex flex-col justify-center items-center w-[80%] h-[340px] rounded-[1.5rem] bg-white shadow border border-solid border-gray-200"
+                  class="flex flex-col justify-center items-center w-[100%] h-[340px] rounded-[1.5rem] bg-white shadow border border-solid border-gray-200"
                 >
                   <img
                     loading="lazy"
@@ -277,11 +284,12 @@
                     class="rounded-[1.5rem] w-full h-full object-cover"
                     alt="Imagem do projeto"
                   />
+                  <div class="swiper-lazy-preloader"></div>
                 </div>
               </div>
               <div class="swiper-slide flex justify-center">
                 <div
-                  class="flex flex-col justify-center items-center w-[80%] h-[340px] rounded-[1.5rem] bg-white shadow border border-solid border-gray-200"
+                  class="flex flex-col justify-center items-center w-[100%] h-[340px] rounded-[1.5rem] bg-white shadow border border-solid border-gray-200"
                 >
                   <img
                     loading="lazy"
@@ -289,11 +297,12 @@
                     class="rounded-[1.5rem] w-full h-full object-cover"
                     alt="Imagem do projeto"
                   />
+                  <div class="swiper-lazy-preloader"></div>
                 </div>
               </div>
               <div class="swiper-slide flex justify-center">
                 <div
-                  class="flex flex-col justify-center items-center w-[80%] h-[340px] rounded-[1.5rem] bg-white shadow border border-solid border-gray-200"
+                  class="flex flex-col justify-center items-center w-[100%] h-[340px] rounded-[1.5rem] bg-white shadow border border-solid border-gray-200"
                 >
                   <img
                     loading="lazy"
@@ -301,6 +310,7 @@
                     class="rounded-[1.5rem] w-full h-full object-cover"
                     alt="Imagem do projeto"
                   />
+                  <div class="swiper-lazy-preloader"></div>
                 </div>
               </div>
             </div>
@@ -367,6 +377,7 @@
         autoplay: {
           delay: 5000,
         },
+        spaceBetween: 20,
         loop: true,
         pagination: {
           el: ".swiper-pagination",
