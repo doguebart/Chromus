@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              blue: "#002071",
+            },
+          },
+        },
+      };
+    </script>
+    <title>Chromus Pinturas</title>
+  </head>
+  <body>
+    <header class="bg-white shadow-sm fixed top-0 left-0 w-full z-50">
+      <nav class="container mx-auto px-6 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center py-3">
+          <a href="#hero" class="flex items-center">
+            <img src="./assets/Logo.png" class="w-[8rem]" alt="" />
+          </a>
+          <button
+            class="inline-flex items-center justify-center rounded-md text-gray-700 hover:text-gray-900 focus:outline-none focus:text-gray-900 lg:hidden"
+            id="menu-button"
+          >
+            <img src="./assets/menu.svg" class="w-[2rem]" alt="" />
+          </button>
+          <div class="hidden lg:flex items-center space-x-10">
+            <a href="#inicio" class="text-gray-700 hover:text-blue">Início</a>
+            <a href="#servicos" class="text-gray-700 hover:text-blue"
+              >Serviços</a
+            >
+            <a href="#projetos" class="text-gray-700 hover:text-blue"
+              >Projetos</a
+            >
+            <a
+              href="#depoimentos"
+              class="text-gray-700 hover:text-blue duration-200"
+              >Depoimentos</a
+            >
+            <a
+              href="#sobre-nos"
+              class="text-gray-700 hover:text-blue duration-200"
+              >Sobre Nós</a
+            >
+            <a
+              href="#orcamento"
+              class="w-fit text-white shadow-sm bg-blue px-3 py-2 rounded-full hover:bg-blue/90 duration-200"
+              >Receber Orçamento</a
+            >
+          </div>
+        </div>
+        <div class="hidden" id="menu">
+          <ul
+            class="flex flex-col space-y-6 my-4 py-4 mx-2 border-t border-gray-500/10 lg:hidden"
+          >
+            <a href="#inicio" class="text-gray-700 hover:text-blue">Início</a>
+            <a href="#servicos" class="text-gray-700 hover:text-blue"
+              >Serviços</a
+            >
+            <a href="#projetos" class="text-gray-700 hover:text-blue"
+              >Projetos</a
+            >
+            <a
+              href="#depoimentos"
+              class="text-gray-700 hover:text-blue duration-200"
+              >Depoimentos</a
+            >
+            <a
+              href="#sobre-nos"
+              class="text-gray-700 hover:text-blue duration-200"
+              >Sobre Nós</a
+            >
+            <a
+              href="#orcamento"
+              class="w-fit text-white shadow-sm bg-blue px-3 py-2 rounded-full hover:bg-blue/90 duration-200"
+              >Receber Orçamento</a
+            >
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <script>
+      const menuButton = document.getElementById("menu-button");
+      const menu = document.getElementById("menu");
+
+      function toggleMenu() {
+        menu.classList.toggle("hidden");
+      }
+
+      menuButton.addEventListener("click", () => {
+        toggleMenu();
+      });
+
+      const menuLinks = menu.querySelectorAll("a");
+
+      menuLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          if (!menu.classList.contains("hidden")) {
+            toggleMenu();
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
