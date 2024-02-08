@@ -35,6 +35,7 @@
     </script>
     <style>
       html {
+        overflow-x: hidden;
         scroll-behavior: smooth;
       }
 
@@ -126,7 +127,7 @@
         class="py-[8rem] px-6 w-full flex flex-col h-fit justify-center"
       >
         <div class="w-[70%] flex flex-col space-y-5 mb-[20px]">
-          <h1 class="leading-12 font-black text-black text-[40px]">
+          <h1 class="leading-12 font-black text-black text-[40px] z-20">
             Transforme ambientes com
             <strong class="text-blue">elegância e sofisticação</strong>
           </h1>
@@ -139,19 +140,19 @@
           <div class="w-1/2 h-[200px] rounded-[1.5rem]">
             <img
               src="./assets/projetos/project-image-1.jpg"
-              class="w-full h-full object-cover rounded-[1.5rem]"
+              class="relative z-20 w-full h-full object-cover rounded-[1.5rem]"
               alt="imagem do projeto"
             />
           </div>
           <div class="w-1/2 h-[200px] rounded-[1.5rem]">
             <img
               src="./assets/projetos/project-image-2.jpg"
-              class="w-full h-full object-cover rounded-[1.5rem]"
+              class="relative z-20 w-full h-full object-cover rounded-[1.5rem]"
               alt="imagem do projeto"
             />
           </div>
         </div>
-        <div class="flex flex-col space-y-[0.5rem]">
+        <div class="relative z-20 flex flex-col space-y-[0.5rem]">
           <a
             href="#orcamento"
             class="w-fit text-white shadow-sm bg-blue p-3 rounded-full hover:bg-blue/90 duration-200"
@@ -165,7 +166,14 @@
         </div>
       </section>
       <section class="w-full h-fit px-6 pb-[4rem] flex flex-col" id="servicos">
-        <div class="flex flex-col space-y-2 w-[70%]">
+        <div class="w-full max-h-full bg-red-500">
+          <img
+            src="./assets/shapes/blob-shape.svg"
+            class="absolute top-[80%] right-[50%] z-10 w-full"
+            alt="plano de fundo bullets"
+          />
+        </div>
+        <div class="relative z-20 flex flex-col space-y-2 w-[70%]">
           <h2 class="font-bold text-blue text-[1rem] tracking-[.25em]">
             SERVIÇOS
           </h2>
@@ -174,7 +182,7 @@
           </p>
         </div>
         <div class="w-full max-h-full py-[2rem]">
-          <div class="swiper">
+          <div class="swiper relative z-20">
             <div class="swiper-wrapper mb-[4rem]">
               <div class="swiper-slide flex justify-center">
                 <div
@@ -253,7 +261,7 @@
         </div>
       </section>
       <section id="projetos" class="w-full h-fit px-6 flex flex-col">
-        <div class="flex flex-col space-y-2 w-[70%]">
+        <div class="relative z-20 flex flex-col space-y-2 w-[70%]">
           <h2 class="font-bold text-blue text-[1rem] tracking-[.25em]">
             PROJETOS
           </h2>
@@ -263,7 +271,7 @@
           </p>
         </div>
         <div class="w-full max-h-full py-[2rem]">
-          <div class="swiper">
+          <div class="swiper relative z-20">
             <div class="swiper-wrapper mb-[4rem]">
               <div class="swiper-slide flex justify-center">
                 <div
@@ -329,9 +337,16 @@
           </div>
         </div>
       </section>
-      <div class="w-full max-h-full px-6 py-[6rem]">
+      <div class="relative w-full max-h-full px-6 py-[6rem]">
+        <div class="w-full max-h-full bg-red-500">
+          <img
+            src="./assets/shapes/blob2-shape.svg"
+            class="absolute top-[50%] right-[50%] z-10 w-full"
+            alt="plano de fundo bullets"
+          />
+        </div>
         <div
-          class="border border-solid border-gray-200 text-center py-[2rem] rounded-[1.5rem] shadow flex flex-col justify-center items-center"
+          class="z-20 relative border bg-white border-solid border-gray-200 text-center py-[2rem] rounded-[1.5rem] shadow flex flex-col justify-center items-center"
         >
           <div class="m-auto w-[70%]">
             <h2
@@ -356,7 +371,9 @@
         class="w-full h-fit px-6 py-[6rem] flex flex-col"
         id="depoimentos"
       >
-        <div class="flex flex-col space-y-2 w-[70%] text-center m-auto">
+        <div
+          class="relative z-20 flex flex-col space-y-2 w-[70%] text-center m-auto"
+        >
           <h2 class="font-bold text-blue text-[1rem] tracking-[.25em]">
             DEPOIMENTOS
           </h2>
@@ -366,7 +383,7 @@
           </p>
         </div>
         <div class="w-full max-h-full py-[2rem]">
-          <div class="swiper">
+          <div class="swiper relative z-20">
             <div class="swiper-wrapper mb-[4rem]">
               <div class="swiper-slide flex justify-center">
                 <div
@@ -474,6 +491,18 @@
             execução da obra. Utilizamos materiais de alta qualidade e técnicas
             modernas para garantir um resultado impecável.
           </p>
+        </div>
+        <div class="w-full max-h-full bg-red-500">
+          <img
+            src="./assets/shapes/lines-shape.png"
+            class="absolute left-0 z-10 w-1/3"
+            alt="plano de fundo brilhoso"
+          />
+          <img
+            src="./assets/shapes/lines-shape.png"
+            class="absolute right-0 z-10 w-1/3"
+            alt="plano de fundo brilhoso"
+          />
         </div>
       </section>
       <section
