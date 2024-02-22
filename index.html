@@ -14,6 +14,12 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("3H0rJZq6W48iStwHF");
+      })();
+    </script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script>
       tailwind.config = {
@@ -23,6 +29,7 @@
               blue: "#002071",
             },
             lineHeight: {
+              10: "3.5rem",
               12: "4rem",
               14: "5rem",
               normal: "1.5rem",
@@ -127,12 +134,16 @@
         id="inicio"
         class="py-[8rem] lg:py-[12rem] px-6 container mx-auto flex flex-col h-fit justify-center lg:flex-row lg:justify-between lg:gap-[2rem]"
       >
-        <div class="w-[100%] flex flex-col space-y-5 mb-[20px] lg:hidden">
-          <h1 class="leading-12 font-black text-black text-[54px] z-20">
+        <div
+          class="w-[100%] md:w-[80%] flex flex-col space-y-5 mb-[20px] lg:hidden"
+        >
+          <h1
+            class="leading-10 md:leading-12 font-black text-black text-[54px] z-20"
+          >
             Transforme ambientes com
             <strong class="text-blue">elegância e sofisticação</strong>
           </h1>
-          <p class="text-gray-500">
+          <p class="md:w-[80%] text-gray-500">
             Pintura de alto padrão e texturização para deixar sua casa ou
             empresa impecável
           </p>
@@ -204,11 +215,10 @@
         </div>
       </section>
       <section
-        data-aos="zoom-in"
         class="container mx-auto h-fit px-6 py-[6rem] flex flex-col"
         id="servicos"
       >
-        <div class="w-full max-h-full">
+        <div data-aos="zoom-in" class="w-full max-h-full">
           <img
             src="./assets/shapes/blob2-shape.svg"
             loading="lazy"
@@ -232,7 +242,7 @@
             <div class="swiper-wrapper mb-[4rem]">
               <div class="swiper-slide flex justify-center">
                 <div
-                  class="flex flex-col w-[100%] max-h-full rounded-[1.5rem] bg-white shadow border border-solid border-gray-200"
+                  class="z-20 flex flex-col w-[100%] max-h-full rounded-[1.5rem] bg-white shadow border border-solid border-gray-200"
                 >
                   <div
                     class="w-full h-[20vh] rounded-tl-[1.5rem] rounded-tr-[1.5rem]"
@@ -257,7 +267,7 @@
               </div>
               <div class="swiper-slide flex justify-center">
                 <div
-                  class="flex flex-col w-[100%] max-h-full rounded-[1.5rem] bg-white shadow border border-solid border-gray-200"
+                  class="z-20 flex flex-col w-[100%] max-h-full rounded-[1.5rem] bg-white shadow border border-solid border-gray-200"
                 >
                   <div
                     class="w-full h-[20vh] rounded-tl-[1.5rem] rounded-tr-[1.5rem]"
@@ -282,7 +292,7 @@
               </div>
               <div class="swiper-slide flex justify-center">
                 <div
-                  class="flex flex-col w-[100%] max-h-full rounded-[1.5rem] bg-white shadow border border-solid border-gray-200"
+                  class="z-20 flex flex-col w-[100%] max-h-full rounded-[1.5rem] bg-white shadow border border-solid border-gray-200"
                 >
                   <div
                     class="w-full h-[20vh] rounded-tl-[1.5rem] rounded-tr-[1.5rem]"
@@ -308,7 +318,7 @@
               </div>
               <div class="swiper-slide flex justify-center">
                 <div
-                  class="flex flex-col w-[100%] max-h-full rounded-[1.5rem] bg-white shadow border border-solid border-gray-200"
+                  class="z-20 flex flex-col w-[100%] max-h-full rounded-[1.5rem] bg-white shadow border border-solid border-gray-200"
                 >
                   <div
                     class="w-full h-[20vh] rounded-tl-[1.5rem] rounded-tr-[1.5rem]"
@@ -334,7 +344,7 @@
               </div>
               <div class="swiper-slide flex justify-center">
                 <div
-                  class="flex flex-col w-[100%] max-h-full rounded-[1.5rem] bg-white shadow border border-solid border-gray-200"
+                  class="z-20 flex flex-col w-[100%] max-h-full rounded-[1.5rem] bg-white shadow border border-solid border-gray-200"
                 >
                   <div
                     class="w-full h-[20vh] rounded-tl-[1.5rem] rounded-tr-[1.5rem]"
@@ -359,7 +369,7 @@
               </div>
               <div class="swiper-slide flex justify-center">
                 <div
-                  class="flex flex-col w-[100%] max-h-full rounded-[1.5rem] bg-white shadow border border-solid border-gray-200"
+                  class="z-20 flex flex-col w-[100%] max-h-full rounded-[1.5rem] bg-white shadow border border-solid border-gray-200"
                 >
                   <div
                     class="w-full h-[20vh] rounded-tl-[1.5rem] rounded-tr-[1.5rem]"
@@ -414,7 +424,7 @@
             </div>
           </div>
           <div
-            class="flex flex-col w-[100%] max-h-full rounded-[1.5rem] bg-white shadow border border-solid border-gray-200"
+            class="z-20 flex flex-col w-[100%] max-h-full rounded-[1.5rem] bg-white shadow border border-solid border-gray-200"
           >
             <div
               class="w-full h-[20vh] rounded-tl-[1.5rem] rounded-tr-[1.5rem]"
@@ -437,7 +447,7 @@
             </div>
           </div>
           <div
-            class="flex flex-col w-[100%] max-h-full rounded-[1.5rem] bg-white shadow border border-solid border-gray-200"
+            class="z-20 flex flex-col w-[100%] max-h-full rounded-[1.5rem] bg-white shadow border border-solid border-gray-200"
           >
             <div
               class="w-full h-[20vh] rounded-tl-[1.5rem] rounded-tr-[1.5rem]"
@@ -460,7 +470,7 @@
             </div>
           </div>
           <div
-            class="flex flex-col w-[100%] max-h-full rounded-[1.5rem] bg-white shadow border border-solid border-gray-200"
+            class="z-20 flex flex-col w-[100%] max-h-full rounded-[1.5rem] bg-white shadow border border-solid border-gray-200"
           >
             <div
               class="w-full h-[20vh] rounded-tl-[1.5rem] rounded-tr-[1.5rem]"
@@ -483,7 +493,7 @@
             </div>
           </div>
           <div
-            class="flex flex-col w-[100%] max-h-full rounded-[1.5rem] bg-white shadow border border-solid border-gray-200"
+            class="z-20 flex flex-col w-[100%] max-h-full rounded-[1.5rem] bg-white shadow border border-solid border-gray-200"
           >
             <div
               class="w-full h-[20vh] rounded-tl-[1.5rem] rounded-tr-[1.5rem]"
@@ -506,7 +516,7 @@
             </div>
           </div>
           <div
-            class="flex flex-col w-[100%] max-h-full rounded-[1.5rem] bg-white shadow border border-solid border-gray-200"
+            class="z-20 flex flex-col w-[100%] max-h-full rounded-[1.5rem] bg-white shadow border border-solid border-gray-200"
           >
             <div
               class="w-full h-[20vh] rounded-tl-[1.5rem] rounded-tr-[1.5rem]"
@@ -546,7 +556,7 @@
             confortáveis
           </p>
         </div>
-        <div class="w-full max-h-full py-[2rem] lg:hidden">
+        <div class="w-full max-h-full py-[2rem] md:hidden">
           <div class="swiper relative z-20 rounded-[1.5rem]">
             <div class="swiper-wrapper mb-[4rem]">
               <div class="swiper-slide flex justify-center">
@@ -641,7 +651,7 @@
 
         <div class="z-20 w-full max-h-full flex flex-col">
           <div
-            class="hidden w-full max-h-full py-[2rem] lg:grid grid-cols-3 gap-[2rem]"
+            class="hidden w-full max-h-full py-[2rem] md:grid grid-cols-2 lg:grid-cols-3 gap-[2rem]"
           >
             <div
               class="flex flex-col justify-center items-center w-[100%] h-[340px] rounded-[1.5rem] bg-white shadow border border-solid border-gray-200"
@@ -704,7 +714,7 @@
               />
             </div>
           </div>
-          <div class="hidden lg:block z-20 w-full py-6">
+          <div class="hidden md:block z-20 w-full py-6">
             <a
               href="#orcamento"
               class="w-fit text-white shadow-sm bg-blue p-3 rounded-full hover:bg-blue/90 duration-200"
@@ -726,7 +736,7 @@
           />
         </div>
         <div
-          class="z-20 relative border bg-white border-solid border-gray-200 text-center py-[2rem] rounded-[1.5rem] shadow flex flex-col justify-center items-center"
+          class="md:w-[70%] mx-auto z-20 relative border bg-white border-solid border-gray-200 text-center py-[2rem] rounded-[1.5rem] shadow flex flex-col justify-center items-center"
         >
           <div class="m-auto w-[70%]">
             <h2
@@ -748,11 +758,10 @@
         </div>
       </div>
       <section
-        data-aos="zoom-in"
         class="container mx-auto h-fit px-6 py-[6rem] flex flex-col"
         id="depoimentos"
       >
-        <div class="w-full max-h-full">
+        <div data-aos="zoom-in" class="w-full max-h-full">
           <img
             src="./assets/shapes/blob2-shape.svg"
             class="lg:hidden absolute top-[0%] lg:top-[-10%] right-[70%] lg:right-[90%] z-10 w-full lg:w-[100%]"
@@ -773,7 +782,9 @@
           </p>
         </div>
         <div class="w-full max-h-full py-[2rem]">
-          <div class="swiper lg:w-[50%] relative z-20 rounded-[1.5rem]">
+          <div
+            class="swiper md:w-[70%] lg:w-[50%] relative z-20 rounded-[1.5rem]"
+          >
             <div class="swiper-wrapper mb-[4rem]">
               <div class="swiper-slide flex justify-center">
                 <div
@@ -874,7 +885,7 @@
           </p>
         </div>
         <div
-          class="z-20 m-auto w-[70%] lg:w-[50%] max-h-full py-[2rem] text-center"
+          class="z-20 m-auto container mx-auto md:w-[70%] lg:w-[50%] max-h-full py-[2rem] text-center"
         >
           <p>
             Somos uma empresa especializada em pintura de alto padrão e
@@ -890,9 +901,11 @@
       </section>
       <section
         id="orcamento"
-        class="lg:w-[50%] m-auto lg:rounded-[1.5rem] h-fit bg-blue px-6 py-[6rem] flex flex-col"
+        class="w-full m-auto h-fit bg-blue px-6 py-[6rem] flex flex-col"
       >
-        <div class="flex flex-col space-y-2 w-[80%] text-center m-auto">
+        <div
+          class="md:w-[50%] lg:w-[30%] flex flex-col space-y-2 text-center m-auto"
+        >
           <p class="font-bold text-white text-[1.5rem] leading-normal">
             Pintura de alto padrão e texturização para deixar sua casa ou
             empresa impecável
@@ -902,10 +915,23 @@
             orçamento personalizado sem esforço
           </p>
         </div>
-        <div class="w-[100%] m-auto mt-[2rem] flex flex-col space-y-10">
-          <form class="w-full max-h-full space-y-6">
-            <div class="gap-[1rem] hidden lg:flex w-full flex items-center">
-              <div class="w-1/2 flex-col space-y-1">
+        <div
+          class="w-full md:w-[640px] m-auto mt-[2rem] flex flex-col space-y-10"
+        >
+          <form id="contactForm" class="w-full max-h-full space-y-6">
+            <div
+              id="successMessage"
+              class="hidden flex flex-col items-center text-center gap-2 w-fit mx-auto px-2 py-2 rounded-[10px] bg-green-700"
+            >
+              <p class="text-[18px] font-bold text-white">
+                Orçamento solicitado com sucesso!
+              </p>
+            </div>
+
+            <div
+              class="gap-[1rem] flex flex-col lg:flex-row w-full flex items-center"
+            >
+              <div class="w-full lg:w-1/2 flex-col space-y-1">
                 <label for="name" class="text-white">Nome</label>
                 <input
                   class="w-full p-2 rounded-lg outline-none placeholder:text-[16px]"
@@ -914,39 +940,23 @@
                   placeholder="Digite o seu nome"
                   id="name"
                 />
+                <div id="nameError" class="text-red-500 hidden">
+                  Por favor, insira seu nome.
+                </div>
               </div>
-              <div class="w-1/2 flex flex-col space-y-1">
+              <div class="w-full lg:w-1/2 flex flex-col space-y-1">
                 <label for="phone" class="text-white">Celular</label>
                 <input
                   class="p-2 rounded-lg outline-none placeholder:text-[16px]"
                   type="tel"
                   name="phone"
-                  placeholder="(XX) XXXXX-XXXX"
+                  placeholder="Digite o seu número de celular"
                   id="phone"
                 />
+                <div id="phoneError" class="text-red-500 hidden">
+                  Por favor, insira seu número de celular.
+                </div>
               </div>
-            </div>
-
-            <div class="lg:hidden flex flex-col space-y-1">
-              <label for="name" class="text-white">Nome</label>
-              <input
-                class="p-2 rounded-lg outline-none placeholder:text-[16px]"
-                type="text"
-                name="name"
-                placeholder="Digite o seu nome"
-                id="name"
-              />
-            </div>
-
-            <div class="lg:hidden flex flex-col space-y-1">
-              <label for="phone" class="text-white">Celular</label>
-              <input
-                class="p-2 rounded-lg outline-none placeholder:text-[16px]"
-                type="tel"
-                name="phone"
-                placeholder="(XX) XXXXX-XXXX"
-                id="phone"
-              />
             </div>
             <div class="flex flex-col space-y-1">
               <label for="email" class="text-white">E-mail</label>
@@ -957,22 +967,29 @@
                 placeholder="Digite seu melhor e-mail"
                 id="email"
               />
+              <div id="emailError" class="text-red-500 hidden">
+                Por favor, insira um e-mail válido.
+              </div>
             </div>
             <div class="flex flex-col space-y-1">
-              <label for="service" class="text-white"
+              <label for="message" class="text-white"
                 >Descreva o serviço desejado</label
               >
               <textarea
                 class="h-[8rem] p-2 rounded-lg outline-none placeholder:text-[16px]"
-                type="text"
-                name="service"
+                name="message"
                 placeholder="Ex: Quero pintar as paredes do meu escritório, também quero cimento queimado em uma delas"
-                id="service"
+                id="message"
               ></textarea>
+              <div id="serviceError" class="text-red-500 hidden">
+                Por favor, descreva o serviço desejado.
+              </div>
             </div>
           </form>
+          <div id="error-message" class="text-red-500"></div>
           <div class="w-full flex justify-center">
             <button
+              id="submitBtn"
               class="w-fit text-blue shadow-sm bg-white border border-solid border-blue border-white p-3 rounded-full hover:bg-blue hover:text-white duration-200"
             >
               Receber Orçamento
@@ -1079,7 +1096,6 @@
         >
       </div>
     </footer>
-
     <script>
       const menuButton = document.getElementById("menu-button");
       const menu = document.getElementById("menu");
@@ -1114,6 +1130,127 @@
         },
       });
     </script>
+    <script>
+      document
+        .getElementById("submitBtn")
+        .addEventListener("click", function (event) {
+          event.preventDefault();
+
+          var errorDivs = document.querySelectorAll(".text-red-500");
+          errorDivs.forEach(function (errorDiv) {
+            errorDiv.classList.add("hidden");
+          });
+
+          var form = document.getElementById("contactForm");
+          var from_name = document.getElementById("name").value.trim();
+          var from_phone = document.getElementById("phone").value.trim();
+          var from_email = document.getElementById("email").value.trim();
+          var message = document.getElementById("message").value.trim();
+          var isValid = true;
+
+          if (from_name === "") {
+            document.getElementById("nameError").classList.remove("hidden");
+            isValid = false;
+          }
+          if (from_phone === "") {
+            document.getElementById("phoneError").classList.remove("hidden");
+            isValid = false;
+          } else if (!isValidPhoneNumber(from_phone)) {
+            document.getElementById("phoneError").classList.remove("hidden");
+            isValid = false;
+          }
+          if (from_email === "" || !isValidEmail(from_email)) {
+            document.getElementById("emailError").classList.remove("hidden");
+            isValid = false;
+          }
+          if (message === "") {
+            document.getElementById("serviceError").classList.remove("hidden");
+            isValid = false;
+          }
+
+          if (isValid) {
+            var templateParams = {
+              from_name: from_name,
+              from_phone: from_phone,
+              from_email: from_email,
+              message: message,
+            };
+
+            emailjs
+              .send("service_9urkuzk", "template_5hrs6ww", templateParams)
+              .then(
+                function (response) {
+                  console.log("E-mail enviado com sucesso!", response);
+                  showSuccessMessage();
+                  form.reset();
+                },
+                function (error) {
+                  console.error(
+                    "Erro ao solicitar orçamento! Tente novamente mais tarde.",
+                    error
+                  );
+                  showFailureMessage();
+                }
+              );
+          }
+        });
+
+      // Aplica a máscara de telefone
+      document
+        .getElementById("phone")
+        .addEventListener("input", function (event) {
+          var phoneInput = event.target;
+          var phone = phoneInput.value.replace(/\D/g, "");
+          var formattedPhone = "(" + phone.substring(0, 2) + ") ";
+
+          if (phone.length > 2) {
+            formattedPhone += phone.substring(2, 7);
+          }
+
+          if (phone.length > 7) {
+            formattedPhone += "-" + phone.substring(7, 11);
+          }
+
+          phoneInput.value = formattedPhone;
+        });
+
+      function isValidPhoneNumber(phone) {
+        var phoneRegex = /^\(\d{2}\)\s\d{4,5}-\d{4}$/;
+        return phoneRegex.test(phone);
+      }
+
+      function isValidEmail(email) {
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+      }
+
+      function showSuccessMessage() {
+        var successDiv = document.getElementById("successMessage");
+        successDiv.classList.remove("hidden");
+        successDiv.classList.remove("bg-red-700");
+        successDiv.classList.add("bg-green-700");
+        successDiv.querySelector(".font-medium").textContent =
+          "Orçamento solicitado com sucesso!";
+
+        setTimeout(function () {
+          successDiv.classList.add("hidden");
+        }, 3000);
+      }
+
+      function showFailureMessage() {
+        var successDiv = document.getElementById("successMessage");
+        successDiv.classList.remove("hidden");
+        successDiv.classList.remove("bg-green-700");
+        successDiv.classList.add("bg-red-700");
+        successDiv.querySelector(".font-medium").textContent =
+          "Erro ao solicitar orçamento! Tente novamente mais tarde.";
+
+        setTimeout(function () {
+          successDiv.classList.add("hidden");
+        }, 3000);
+      }
+    </script>
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
