@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/jpg" href="/assets/favicon.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("3H0rJZq6W48iStwHF");
+      })();
+    </script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              blue: "#002071",
+            },
+            lineHeight: {
+              10: "3.5rem",
+              12: "4rem",
+              14: "5rem",
+              normal: "1.5rem",
+            },
+            fontFamily: {
+              outfit: ["Outfit"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      html {
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+      }
+
+      .swiper-pagination-bullet {
+        width: 14px;
+        height: 14px;
+        background-color: #002071;
+      }
+
+      .swiper-pagination-bullet-active {
+        width: 16px;
+        height: 16px;
+        background-color: #002071;
+      }
+    </style>
+    <title>Chromus Pinturas | Projetos</title>
+  </head>
+  <body class="font-outfit">
+    <header class="bg-white shadow-sm w-full fixed top-0 z-50">
+      <nav class="container mx-auto px-6 lg:px-6">
+        <div class="flex justify-between items-center py-3">
+          <a href="./index.html" class="flex items-center">
+            <img src="./assets/Logo.svg" class="w-[10rem]" alt="chromus logo" />
+          </a>
+          <button
+            class="inline-flex items-center justify-center rounded-md text-gray-700 hover:text-gray-900 focus:outline-none focus:text-gray-900 lg:hidden"
+            id="menu-button"
+          >
+            <img src="./assets/icons/menu.svg" class="w-[2rem]" alt="" />
+          </button>
+          <div class="hidden lg:flex items-center space-x-10">
+            <a
+              href="./index.html"
+              class="capitalize text-gray-700 lg:text-[18px] hover:text-blue"
+              >Voltar para home</a
+            >
+          </div>
+        </div>
+        <div class="hidden" id="menu">
+          <ul
+            class="flex flex-col space-y-6 my-4 py-4 mx-2 border-t border-gray-500/10 lg:hidden"
+          >
+            <a
+              href="./index.html"
+              class="capitalize text-gray-700 lg:text-[18px] hover:text-blue"
+              >Voltar para home</a
+            >
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section
+        id="projetos"
+        class="relative container mx-auto h-fit px-6 py-[6rem] md:py-[8rem] flex flex-col"
+      >
+        <div class="relative z-20 flex flex-col space-y-2 w-[70%]">
+          <h2
+            class="font-bold text-blue lg:text-[20px] text-[1rem] tracking-[.25em]"
+          >
+            PROJETOS
+          </h2>
+          <p
+            class="lg:w-[50%] font-bold text-black text-[1.5rem] leading-normal"
+          >
+            Transformamos ambientes, deixando-os mais bonitos, elegantes e
+            confortáveis
+          </p>
+        </div>
+        <!-- <div class="w-full max-h-full py-[2rem] md:hidden">
+          <div class="swiper relative z-20 rounded-[1.5rem]">
+            <div class="swiper-wrapper mb-[4rem]">
+              <div class="swiper-slide flex justify-center">
+                <div
+                  class="flex flex-col justify-center items-center w-[100%] h-[340px] rounded-[1.5rem] bg-white shadow border border-solid border-gray-200"
+                >
+                  <img
+                    loading="lazy"
+                    src="./assets/projetos/project-image-1.jpg"
+                    class="rounded-[1.5rem] w-full h-full object-cover"
+                    alt="Imagem do projeto"
+                  />
+                  <div class="swiper-lazy-preloader"></div>
+                </div>
+              </div>
+              <div class="swiper-slide flex justify-center">
+                <div
+                  class="flex flex-col justify-center items-center w-[100%] h-[340px] rounded-[1.5rem] bg-white shadow border border-solid border-gray-200"
+                >
+                  <img
+                    loading="lazy"
+                    src="./assets/projetos/project-image-5.jpg"
+                    class="rounded-[1.5rem] w-full h-full object-cover"
+                    alt="Imagem do projeto"
+                  />
+                  <div class="swiper-lazy-preloader"></div>
+                </div>
+              </div>
+              <div class="swiper-slide flex justify-center">
+                <div
+                  class="flex flex-col justify-center items-center w-[100%] h-[340px] rounded-[1.5rem] bg-white shadow border border-solid border-gray-200"
+                >
+                  <img
+                    loading="lazy"
+                    src="./assets/projetos/project-image-3.jpg"
+                    class="rounded-[1.5rem] w-full h-full object-cover"
+                    alt="Imagem do projeto"
+                  />
+                  <div class="swiper-lazy-preloader"></div>
+                </div>
+              </div>
+              <div class="swiper-slide flex justify-center">
+                <div
+                  class="flex flex-col justify-center items-center w-[100%] h-[340px] rounded-[1.5rem] bg-white shadow border border-solid border-gray-200"
+                >
+                  <img
+                    loading="lazy"
+                    src="./assets/projetos/project-image-6.jpg"
+                    class="rounded-[1.5rem] w-full h-full object-cover"
+                    alt="Imagem do projeto"
+                  />
+                  <div class="swiper-lazy-preloader"></div>
+                </div>
+              </div>
+              <div class="swiper-slide flex justify-center">
+                <div
+                  class="flex flex-col justify-center items-center w-[100%] h-[340px] rounded-[1.5rem] bg-white shadow border border-solid border-gray-200"
+                >
+                  <img
+                    loading="lazy"
+                    src="./assets/projetos/project-image-2.jpg"
+                    class="rounded-[1.5rem] w-full h-full object-cover"
+                    alt="Imagem do projeto"
+                  />
+                  <div class="swiper-lazy-preloader"></div>
+                </div>
+              </div>
+              <div class="swiper-slide flex justify-center">
+                <div
+                  class="flex flex-col justify-center items-center w-[100%] h-[340px] rounded-[1.5rem] bg-white shadow border border-solid border-gray-200"
+                >
+                  <img
+                    loading="lazy"
+                    src="./assets/projetos/project-image-4.jpg"
+                    class="rounded-[1.5rem] w-full h-full object-cover"
+                    alt="Imagem do projeto"
+                  />
+                  <div class="swiper-lazy-preloader"></div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div> -->
+
+        <div class="z-20 w-full max-h-full flex flex-col">
+          <div
+            class="w-full max-h-full py-[2rem] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[2rem]"
+          >
+            <div
+              class="flex flex-col justify-center items-center w-[100%] h-[340px] rounded-[1.5rem] bg-white shadow border border-solid border-gray-200"
+            >
+              <img
+                loading="lazy"
+                src="https://i.ibb.co/G75MMXq/f457651b-971e-430e-a116-da8c72e4a025.jpg"
+                class="w-full h-full object-cover"
+                alt="Imagem do projeto"
+              />
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-[100%] h-[340px] bg-white shadow border border-solid border-gray-200"
+            >
+              <img
+                loading="lazy"
+                src="https://i.ibb.co/0ZbHb4H/f601d4d8-a004-486f-b7cc-be32ebf061d6.jpg"
+                class="w-full h-full object-cover"
+                alt="Imagem do projeto"
+              />
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-[100%] h-[340px] bg-white shadow border border-solid border-gray-200"
+            >
+              <img
+                loading="lazy"
+                src="https://i.ibb.co/92rcwZZ/f458c917-a18a-4352-b03a-224a2c7a0a1c.jpg"
+                class="w-full h-full object-cover"
+                alt="Imagem do projeto"
+              />
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-[100%] h-[340px] rounded-[1.5rem] bg-white shadow border border-solid border-gray-200"
+            >
+              <img
+                loading="lazy"
+                src="https://i.ibb.co/LdrtK4v/f175e314-1eca-4274-b034-7c3dadb7b79c.jpg"
+                class="w-full h-full object-cover"
+                alt="Imagem do projeto"
+              />
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-[100%] h-[340px] bg-white shadow border border-solid border-gray-200"
+            >
+              <img
+                loading="lazy"
+                src="https://i.ibb.co/r7tFPSB/f37fadb7-ee9e-44b1-b382-ce317b5d0749.jpg"
+                class="w-full h-full object-cover"
+                alt="Imagem do projeto"
+              />
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-[100%] h-[340px] bg-white shadow border border-solid border-gray-200"
+            >
+              <img
+                loading="lazy"
+                src="https://i.ibb.co/ZVv36CQ/f6cad3a6-6e7c-4850-8682-0f14c69e1677.jpg"
+                class="w-full h-full object-cover"
+                alt="Imagem do projeto"
+              />
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-[100%] h-[340px] bg-white shadow border border-solid border-gray-200"
+            >
+              <img
+                loading="lazy"
+                src="https://i.ibb.co/yWYscSh/f1b2658f-0c8c-492e-9e5a-4ea7509949f8.jpg"
+                class="w-full h-full object-cover"
+                alt="Imagem do projeto"
+              />
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-[100%] h-[340px] bg-white shadow border border-solid border-gray-200"
+            >
+              <img
+                loading="lazy"
+                src="https://i.ibb.co/YNHDScP/e27e8082-0512-45c2-9733-db90cd496c3f.jpg"
+                class="w-full h-full object-cover"
+                alt="Imagem do projeto"
+              />
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-[100%] h-[340px] bg-white shadow border border-solid border-gray-200"
+            >
+              <img
+                loading="lazy"
+                src="https://i.ibb.co/DzmDw9H/d550154e-8261-4da7-93c6-c1c92e4f5eb4.jpg"
+                class="w-full h-full object-cover"
+                alt="Imagem do projeto"
+              />
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-[100%] h-[340px] bg-white shadow border border-solid border-gray-200"
+            >
+              <img
+                loading="lazy"
+                src="https://i.ibb.co/GcGz0pv/dc9a6efc-a4eb-4233-901d-d0534ef15da5.jpg"
+                class="w-full h-full object-cover"
+                alt="Imagem do projeto"
+              />
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-[100%] h-[340px] bg-white shadow border border-solid border-gray-200"
+            >
+              <img
+                loading="lazy"
+                src="https://i.ibb.co/bmf215x/d63501ef-906a-44ba-8cbc-2cc6659a9e96.jpg"
+                class="w-full h-full object-cover"
+                alt="Imagem do projeto"
+              />
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-[100%] h-[340px] bg-white shadow border border-solid border-gray-200"
+            >
+              <img
+                loading="lazy"
+                src="https://i.ibb.co/tq7SKTb/c13597d1-b953-4c0b-aa9e-28e59c593c5c.jpg"
+                class="w-full h-full object-cover"
+                alt="Imagem do projeto"
+              />
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-[100%] h-[340px] bg-white shadow border border-solid border-gray-200"
+            >
+              <img
+                loading="lazy"
+                src="https://i.ibb.co/317pVgs/c491f533-3a7d-4be2-89ba-8af569b5a15d.jpg"
+                class="w-full h-full object-cover"
+                alt="Imagem do projeto"
+              />
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-[100%] h-[340px] bg-white shadow border border-solid border-gray-200"
+            >
+              <img
+                loading="lazy"
+                src="https://i.ibb.co/zSmbJRD/c4482d00-d838-46dc-bd93-3b3add8c0e2f.jpg"
+                class="w-full h-full object-cover"
+                alt="Imagem do projeto"
+              />
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-[100%] h-[340px] bg-white shadow border border-solid border-gray-200"
+            >
+              <img
+                loading="lazy"
+                src="https://i.ibb.co/Xx8jjRT/b2d443f4-5a59-443e-b67a-8ad371514a5a.jpg"
+                class="w-full h-full object-cover"
+                alt="Imagem do projeto"
+              />
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-[100%] h-[340px] bg-white shadow border border-solid border-gray-200"
+            >
+              <img
+                loading="lazy"
+                src="https://i.ibb.co/7Kr4mM5/65914985-9754-4256-8dae-e412b9b87eda.jpg"
+                class="w-full h-full object-cover"
+                alt="Imagem do projeto"
+              />
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-[100%] h-[340px] bg-white shadow border border-solid border-gray-200"
+            >
+              <img
+                loading="lazy"
+                src="https://i.ibb.co/YXgqc1J/3675123a-5c3a-4914-8f46-e040ff33e60e.jpg"
+                class="w-full h-full object-cover"
+                alt="Imagem do projeto"
+              />
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-[100%] h-[340px] bg-white shadow border border-solid border-gray-200"
+            >
+              <img
+                loading="lazy"
+                src="https://i.ibb.co/HFJrjbx/60965c30-ef61-40e9-a80c-efcc32691347.jpg"
+                class="w-full h-full object-cover"
+                alt="Imagem do projeto"
+              />
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-[100%] h-[340px] bg-white shadow border border-solid border-gray-200"
+            >
+              <img
+                loading="lazy"
+                src="https://i.ibb.co/QJCffZb/102258e2-a53c-46f2-a2e4-b1ef8098781c.jpg"
+                class="w-full h-full object-cover"
+                alt="Imagem do projeto"
+              />
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-[100%] h-[340px] bg-white shadow border border-solid border-gray-200"
+            >
+              <img
+                loading="lazy"
+                src="https://i.ibb.co/MCFvVqh/868e8744-681e-40fd-896a-68b4eba47860.jpg"
+                class="w-full h-full object-cover"
+                alt="Imagem do projeto"
+              />
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-[100%] h-[340px] bg-white shadow border border-solid border-gray-200"
+            >
+              <img
+                loading="lazy"
+                src="https://i.ibb.co/WV15yWL/786c2daa-13e3-4f49-bd39-7fd7138834ec.jpg"
+                class="w-full h-full object-cover"
+                alt="Imagem do projeto"
+              />
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-[100%] h-[340px] bg-white shadow border border-solid border-gray-200"
+            >
+              <img
+                loading="lazy"
+                src="https://i.ibb.co/RcfNn4D/117e2152-526f-41e9-9a30-0fb9b8a9ec8e.jpg"
+                class="w-full h-full object-cover"
+                alt="Imagem do projeto"
+              />
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-[100%] h-[340px] bg-white shadow border border-solid border-gray-200"
+            >
+              <img
+                loading="lazy"
+                src="https://i.ibb.co/MctX4MK/97b804dc-c2c7-45c8-bf75-9c687c8005b2.jpg"
+                class="w-full h-full object-cover"
+                alt="Imagem do projeto"
+              />
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-[100%] h-[340px] bg-white shadow border border-solid border-gray-200"
+            >
+              <img
+                loading="lazy"
+                src="https://i.ibb.co/3hgB82q/79a059b9-d9e2-4383-86a9-85a5399f9060.jpg"
+                class="w-full h-full object-cover"
+                alt="Imagem do projeto"
+              />
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-[100%] h-[340px] bg-white shadow border border-solid border-gray-200"
+            >
+              <img
+                loading="lazy"
+                src="https://i.ibb.co/r6S6R8H/44ad21c3-12c2-41b1-ae4f-665de79cf71a.jpg"
+                class="w-full h-full object-cover"
+                alt="Imagem do projeto"
+              />
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-[100%] h-[340px] bg-white shadow border border-solid border-gray-200"
+            >
+              <img
+                loading="lazy"
+                src="https://i.ibb.co/SJ7FTbg/9d937eb9-9003-48dd-b726-8c9aa8124bcc.jpg"
+                class="w-full h-full object-cover"
+                alt="Imagem do projeto"
+              />
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-[100%] h-[340px] bg-white shadow border border-solid border-gray-200"
+            >
+              <img
+                loading="lazy"
+                src="https://i.ibb.co/TKzhm4s/9b4212c7-d9b2-45a8-9426-e7142bb698ab.jpg"
+                class="w-full h-full object-cover"
+                alt="Imagem do projeto"
+              />
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-[100%] h-[340px] bg-white shadow border border-solid border-gray-200"
+            >
+              <img
+                loading="lazy"
+                src="https://i.ibb.co/nrZGdpj/9af2a1a2-33da-4bf1-9ea1-8c3112f52c29.jpg"
+                class="w-full h-full object-cover"
+                alt="Imagem do projeto"
+              />
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-[100%] h-[340px] bg-white shadow border border-solid border-gray-200"
+            >
+              <img
+                loading="lazy"
+                src="https://i.ibb.co/6Hb3SRn/7ef70692-21e7-4c1a-89b2-4daafbeb2647.jpg"
+                class="w-full h-full object-cover"
+                alt="Imagem do projeto"
+              />
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-[100%] h-[340px] bg-white shadow border border-solid border-gray-200"
+            >
+              <img
+                loading="lazy"
+                src="https://i.ibb.co/qFmrQ7X/5c609959-d44f-4fb8-ac6a-d89bc33f8d95.jpg"
+                class="w-full h-full object-cover"
+                alt="Imagem do projeto"
+              />
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-[100%] h-[340px] bg-white shadow border border-solid border-gray-200"
+            >
+              <img
+                loading="lazy"
+                src="https://i.ibb.co/tLsNYwf/4d428677-c50e-4ae5-9b26-172259f0138a.jpg"
+                class="w-full h-full object-cover"
+                alt="Imagem do projeto"
+              />
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-[100%] h-[340px] bg-white shadow border border-solid border-gray-200"
+            >
+              <img
+                loading="lazy"
+                src="https://i.ibb.co/1qFxXJ7/3f35f98d-f25a-4169-b234-01b0fc4b2dfc.jpg"
+                class="w-full h-full object-cover"
+                alt="Imagem do projeto"
+              />
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-[100%] h-[340px] bg-white shadow border border-solid border-gray-200"
+            >
+              <img
+                loading="lazy"
+                src="https://i.ibb.co/MZ6kk0z/3daa9c4c-5f96-4727-ae98-d60095f06407.jpg"
+                class="w-full h-full object-cover"
+                alt="Imagem do projeto"
+              />
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-[100%] h-[340px] bg-white shadow border border-solid border-gray-200"
+            >
+              <img
+                loading="lazy"
+                src="https://i.ibb.co/xhRZkcz/1c04cb40-da2f-4a15-aaa5-4f0063d58ea3.jpg"
+                class="w-full h-full object-cover"
+                alt="Imagem do projeto"
+              />
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-[100%] h-[340px] bg-white shadow border border-solid border-gray-200"
+            >
+              <img
+                loading="lazy"
+                src="https://i.ibb.co/Q8PTzcJ/0faca756-a9d1-4e58-b321-6ae9ecf2a50c.jpg"
+                class="w-full h-full object-cover"
+                alt="Imagem do projeto"
+              />
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-[100%] h-[340px] bg-white shadow border border-solid border-gray-200"
+            >
+              <img
+                loading="lazy"
+                src="https://i.ibb.co/JnN7wKT/f3bdd3c7-bd36-4f4d-93b0-fc395c9e16e2.jpg"
+                class="w-full h-full object-cover"
+                alt="Imagem do projeto"
+              />
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-[100%] h-[340px] bg-white shadow border border-solid border-gray-200"
+            >
+              <img
+                loading="lazy"
+                src="https://i.ibb.co/8YsDHS2/e2864823-2196-4754-9d97-b5f72da25d5c.jpg"
+                class="w-full h-full object-cover"
+                alt="Imagem do projeto"
+              />
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-[100%] h-[340px] bg-white shadow border border-solid border-gray-200"
+            >
+              <img
+                loading="lazy"
+                src="https://i.ibb.co/3101nmk/e5f9e675-bea0-4067-a5e5-e0e3cfb435ea.jpg"
+                class="w-full h-full object-cover"
+                alt="Imagem do projeto"
+              />
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-[100%] h-[340px] bg-white shadow border border-solid border-gray-200"
+            >
+              <img
+                loading="lazy"
+                src="https://i.ibb.co/jb6FG0J/c15caafc-e6ea-4adc-b172-b69ba4505352.jpg"
+                class="w-full h-full object-cover"
+                alt="Imagem do projeto"
+              />
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-[100%] h-[340px] bg-white shadow border border-solid border-gray-200"
+            >
+              <img
+                loading="lazy"
+                src="https://i.ibb.co/s54dx62/bb4c8ffe-327b-4ef7-9ff9-1075ef640001.jpg"
+                class="w-full h-full object-cover"
+                alt="Imagem do projeto"
+              />
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-[100%] h-[340px] bg-white shadow border border-solid border-gray-200"
+            >
+              <img
+                loading="lazy"
+                src="https://i.ibb.co/hdgQwYt/b960ffe4-ee5e-4d84-bd56-f2eab1e64561.jpg"
+                class="w-full h-full object-cover"
+                alt="Imagem do projeto"
+              />
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-[100%] h-[340px] bg-white shadow border border-solid border-gray-200"
+            >
+              <img
+                loading="lazy"
+                src="https://i.ibb.co/VJXsrZx/d472886b-9c0d-442f-8aa5-baba1aab8feb.jpg"
+                class="w-full h-full object-cover"
+                alt="Imagem do projeto"
+              />
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-[100%] h-[340px] bg-white shadow border border-solid border-gray-200"
+            >
+              <img
+                loading="lazy"
+                src="https://i.ibb.co/S5GML7k/c68f91cc-3381-4ea0-9256-ff967da34297.jpg"
+                class="w-full h-full object-cover"
+                alt="Imagem do projeto"
+              />
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-[100%] h-[340px] bg-white shadow border border-solid border-gray-200"
+            >
+              <img
+                loading="lazy"
+                src="https://i.ibb.co/CMFTV0c/403577f6-bb76-4de7-bdb3-63fa28d3dbb0.jpg"
+                class="w-full h-full object-cover"
+                alt="Imagem do projeto"
+              />
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-[100%] h-[340px] bg-white shadow border border-solid border-gray-200"
+            >
+              <img
+                loading="lazy"
+                src="https://i.ibb.co/wKfNpvy/5739ebf3-2f04-4cba-8cb4-0f49de82d559.jpg"
+                class="w-full h-full object-cover"
+                alt="Imagem do projeto"
+              />
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-[100%] h-[340px] bg-white shadow border border-solid border-gray-200"
+            >
+              <img
+                loading="lazy"
+                src="https://i.ibb.co/gMD59MK/5a7892c4-88ce-454d-8089-1cba4e57fcf7.jpg"
+                class="w-full h-full object-cover"
+                alt="Imagem do projeto"
+              />
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-[100%] h-[340px] bg-white shadow border border-solid border-gray-200"
+            >
+              <img
+                loading="lazy"
+                src="https://i.ibb.co/j3xShYS/76bf50f6-7e1f-4a98-bfcf-19e91dbd0b57.jpg"
+                class="w-full h-full object-cover"
+                alt="Imagem do projeto"
+              />
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-[100%] h-[340px] bg-white shadow border border-solid border-gray-200"
+            >
+              <img
+                loading="lazy"
+                src="https://i.ibb.co/LY5TmTP/4f9ee8db-26cd-4e75-9ab8-989e91d2239c.jpg"
+                class="w-full h-full object-cover"
+                alt="Imagem do projeto"
+              />
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-[100%] h-[340px] bg-white shadow border border-solid border-gray-200"
+            >
+              <img
+                loading="lazy"
+                src="https://i.ibb.co/dGmLj7K/01c86f2b-7f5b-49a5-9ba1-22163a5da7d6.jpg"
+                class="w-full h-full object-cover"
+                alt="Imagem do projeto"
+              />
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-[100%] h-[340px] bg-white shadow border border-solid border-gray-200"
+            >
+              <img
+                loading="lazy"
+                src="https://i.ibb.co/NycFBXH/8833595f-aff8-42d7-b73f-37c3a9176f78.jpg"
+                class="w-full h-full object-cover"
+                alt="Imagem do projeto"
+              />
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-[100%] h-[340px] bg-white shadow border border-solid border-gray-200"
+            >
+              <img
+                loading="lazy"
+                src="https://i.ibb.co/tKPJDd1/93a94407-b535-42f2-8063-0039f5cd56a8.jpg"
+                class="w-full h-full object-cover"
+                alt="Imagem do projeto"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <a
+        href="#projetos"
+        class="flex flex-col items-center fixed bottom-[5rem] right-[1rem] z-50 w-fit max-h-full rounded-full bg-blue p-2 hover:bg-green-500/90 hover:-translate-y-2 duration-200"
+      >
+        <img
+          src="./assets/icons/chevron-up.svg"
+          class="w-[32px]"
+          alt="Whatsapp"
+        />
+      </a> -->
+    </main>
+    <footer class="container mx-auto max-h-full px-6 pt-[6rem] bg-white">
+      <div
+        class="flex flex-col py-6 space-y-6 border-t border-solid border-gray-200"
+      >
+        <a href="./index.html" class="w-fit flex items-center">
+          <img src="./assets/Logo.svg" class="w-[8rem]" alt="chromus logo" />
+        </a>
+        <div class="w-full max-h-full flex justify-between">
+          <div class="flex flex-col space-y-2">
+            <a
+              href="./index.html"
+              class="capitalize text-gray-700 lg:text-[18px] hover:text-blue"
+              >Voltar para home</a
+            >
+          </div>
+        </div>
+        <div class="flex flex-col space-y-2">
+          <div class="flex items-center space-x-2">
+            <a
+              href="https://wa.me/5511913100926"
+              target="_blank"
+              class="w-fit max-h-full rounded-full bg-blue p-2 hover:bg-blue/90 duration-200"
+            >
+              <img
+                src="./assets/icons/wpp-icon.svg"
+                loading="lazy"
+                class="w-[24px]"
+                alt="Whatsapp"
+              />
+            </a>
+            <a
+              href="https://www.instagram.com/chromuspinturas/"
+              target="_blank"
+              class="w-fit max-h-full rounded-full bg-blue p-2 hover:bg-blue/90 duration-200"
+            >
+              <img
+                src="./assets/icons/instagram-icon.svg"
+                loading="lazy"
+                class="w-[24px]"
+                alt="Instagram"
+              />
+            </a>
+            <!-- <a
+            href="https://www.instagram.com/chromuspinturas/"
+            target="_blank"
+              class="w-fit max-h-full rounded-full bg-blue p-2 hover:bg-blue/90 duration-200"
+            >
+              <img
+                src="./assets/icons/facebook-icon.svg"
+                loading="lazy"
+                class="w-[24px]"
+                alt="Facebook"
+              />
+            </a>
+            <a
+              href="#"
+              class="w-fit max-h-full rounded-full bg-blue p-2 hover:bg-blue/90 duration-200"
+            >
+              <img
+                src="./assets/icons/youtube-icon.svg"
+                loading="lazy"
+                class="w-[24px]"
+                alt="Youtube"
+              />
+            </a> -->
+          </div>
+          <p class="lg:text-[18px]">orcamento@chromuspinturas.com.br</p>
+        </div>
+      </div>
+      <div
+        class="w-full max-h-full text-center py-[1rem] border-t border-solid border-gray-200"
+      >
+        <span class="text-[14px] lg:text-[18px] text-black/70"
+          >Todos os direitos reservados ©2024 Chromus Pinturas</span
+        >
+      </div>
+    </footer>
+    <script>
+      const menuButton = document.getElementById("menu-button");
+      const menu = document.getElementById("menu");
+
+      function toggleMenu() {
+        menu.classList.toggle("hidden");
+      }
+
+      menuButton.addEventListener("click", () => {
+        toggleMenu();
+      });
+
+      const menuLinks = menu.querySelectorAll("a");
+
+      menuLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          if (!menu.classList.contains("hidden")) {
+            toggleMenu();
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
